@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+header{
+    height: 55px;
+}
+
+.header-cover{
+    height:55px;
+    padding:10px 30px;
+}
+.header-cover .logo{
+    height:100%;
+    margin-right:50px;
+}
+.header-cover .bars i{
+    font-size: 20px;
+}
+.header-cover ul{
+    display:inline
+}
+.header-cover ul li{
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+}
+.header-cover a{
+    color:#73818f;
+}
+.header-cover a:hover{
+    color:#2f353a;
+}
+.app-body{
+    display:flex;
+}
+.app-body .side-bar{
+    width: 11%;
+    height:89vh;
+    background-color:#2f353a;
+    color:white;
+    padding-top:30px;
+}
+.app-body .side-bar ul{
+    list-style:none;
+}
+.app-body .side-bar .nav-title{
+    padding:12px 16px;
+    font-weight: 700;
+}
+.app-body .side-bar a{
+    display:block;
+    padding:12px 0px 12px 50px;
+    color:white;
+}
+.app-body .side-bar a:hover{
+    background-color:#20a8d8;
+}
+.app-body .side-bar sup{
+    display: inline-block;
+    background-color:#20a8d8;
+    margin-left:20px;
+    padding:10px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+main{
+    background-color:#e4e5e662;
+    width: 89%;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+main .form-input{
+    width: 70%;
+    margin:auto;
+}
+main h1{
+    margin-bottom:50px;     
+}
+main .form-input input{
+    margin-bottom:20px;
+}
+main .form-input button{
+    padding-left:50px;
+    padding-right:50px;
+    margin-right:20px;
+    font-weight: 700;
+}
+footer{
+    line-height: 50px;
+}
