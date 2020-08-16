@@ -1,5 +1,5 @@
 <main>
-    <div class="container container-fix">
+    <div class="container">
         @foreach($info_post as $info)
             <div class="block-content">
                 <a class="title-content" href="">

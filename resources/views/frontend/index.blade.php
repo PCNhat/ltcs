@@ -3,14 +3,14 @@
 @section('nav')
 <div class="text-center cover-menu-bottom">
     <div class="container">
-            <a class="web-name" href="">Lập trình cuộc sống</a>
-            <span>Chỉ là blog của một thằng coder</span>
+            <a class="web-name" href="">Thông tin công nghệ</a>
+            <span>Nơi tổng hợp những kiến thức về công nghệ</span>
             <nav>
                 <ul>
                     @foreach($cate as $cate)
-                    <li><a href={{url('nav/'.$cate->id)}}>{{$cate->cate_name}}</a></li>
+                    <li><a href={{ url('nav/'.$cate->id) }}>{{ $cate->cate_name }}</a></li>
                     @endforeach
-                    
+
                 </ul>
             </nav>
     </div>
@@ -18,7 +18,7 @@
 @stop
 @section('main')
     <main>
-        <div class="container container-fix">
+        <div class="container">
             @foreach($info_post as $info)
                 <div class="block-content">
                     <a class="title-content" href="">
