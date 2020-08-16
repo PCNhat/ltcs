@@ -49,8 +49,6 @@ Route::get('send-mail', function () {
 });
 
 
-
-
 //-------------  Frontend   ------------
 
 
@@ -67,4 +65,7 @@ Route::get('drops',function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('product-detail', 'PageController@productDetail')->name('product.detail');
+Route::get('compare-products', 'PageController@compareProducts')->name('compare.products');
 // --------------auth-----------------

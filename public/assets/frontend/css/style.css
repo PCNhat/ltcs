@@ -44,7 +44,7 @@ header .cover-menu-top ul{
     list-style-type: none;
 }
 header .cover-menu-bottom{
-    background-image:   linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(../../../images/cover-bg.jpg);
+    background-image:   linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url(../../../images/bg1.jpg);
     background-size:cover;
     padding-top:140px;
     padding-bottom:50px;
@@ -106,6 +106,57 @@ main .block-content .main-content .short-des{
     line-height: 35px;
     font-family: 'Segoe UI Light';
 }
+/* products */
+.product-nav a:hover {
+    transform: scale(0.9);
+}
+.product-nav img {
+    width: 100px;
+}
+.short-description-product-box {
+    display: table-cell;
+}
+.short-description-product-box .card:hover {
+    color: #006f6a;
+    border: 1px solid #006f6a;
+    transform: scale(1.01);
+}
+.short-description-product-box .card {
+    height: 100%;
+}
+.short-description-product-box .card .card-body {
+    position: relative;
+}
+.short-description-product-box .card .card-body .card-text {
+    height: 33%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.short-description-product-box .card .card-body .card-title {
+    height: 30%;
+    overflow: hidden;
+}
+.frm-search {
+    position: relative;
+}
+.frm-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.price-product {
+    font-size: 24px;
+    color: #dc3545;
+    border: 3px solid #dc3545;
+    border-radius: 10px;
+}
+.name-product a{
+    color: #212529;
+}
+.name-product a:hover {
+    color: #006f6a;
+}
+
 /* hết phần main */
 footer{
     margin-top:40px;

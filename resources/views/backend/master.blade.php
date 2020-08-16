@@ -28,7 +28,8 @@
                 <a href="">
                     <img class="rounded-circle" width="30%" src={{url('images/avatars/1.jpg')}} alt="">
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
-                        {{$name}}
+                        {{-- {{$name}} --}}
+                        abc
                         
                     </a>    
                     <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">

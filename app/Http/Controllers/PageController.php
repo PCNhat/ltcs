@@ -24,8 +24,14 @@ class PageController extends Controller
         return view('frontend.author');
     }
     public function getNav($page){
-        $data['title_des'] = DB::table('categories')->where('id',$page)->get();
-        $data['info_post'] = DB::table('info_post')->where('cate_id',$page)->orderBy('id','desc')->get();
-        return view('frontend.post-list',$data);
+        return view('frontend.products.products');
+    }
+    public function productDetail()
+    {
+        return view('frontend.products.product_detail');
+    }
+    public function compareProducts()
+    {
+        return view('frontend.products.compare_products');
     }
 }

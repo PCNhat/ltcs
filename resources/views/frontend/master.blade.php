@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href={{url('assets/bootstrap/css/bootstrap.min.css')}}>
-    <link rel="stylesheet" href={{url('assets/frontend/css/style.css')}}>
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}">
     <title>@yield('title')</title>
 </head>
 <body>
     <header>
         <div class="cover-menu-top">
-            <a class="float-left web-name-1" href="">Lập trình cuộc sống</a>
+            <a class="float-left web-name-1" href="">Thông tin công nghệ</a>
             <div class="float-right menu">
                 <ul>
                     <li class="float-right"><a href="https://www.facebook.com/hoilaptrinhviennhandan/">Youtube</a></li>
@@ -75,7 +75,7 @@
 
     
     <!-- link script -->
-    <script src={{url('assets/jquery/jquery-3.4.1.min.js')}}></script>
+    <script src={{url('assets/jquery/jquery-3.5.1.min.js')}}></script>
     <script src={{url('assets/bootstrap/js/bootstrap.min.js')}}></script>
     <script src={{url('assets/frontend/js/style.js')}}></script>
 </body>

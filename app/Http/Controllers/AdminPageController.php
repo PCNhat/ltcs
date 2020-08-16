@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use Auth;
 class AdminPageController extends Controller
 {
+    public function __construct()
+    {
+    }
+
     public function getDashBoard(){
         $data['name'] = Auth::user()->name;
         return view('backend.dashboard',$data);
@@ -138,7 +142,7 @@ class AdminPageController extends Controller
             else{
                 return redirect()->back()->with('fails','File cậu vừa chọn không phải file ảnh cậu ơi!');
             }
-            
+
         }
     }
     public function getListInfoPost(){
