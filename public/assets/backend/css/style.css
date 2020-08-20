@@ -78,15 +78,8 @@ main{
     padding-top:50px;
     padding-bottom:50px;
 }
-main .form-input{
-    width: 70%;
-    margin:auto;
-}
 main h1{
-    margin-bottom:50px;     
-}
-main .form-input input{
-    margin-bottom:20px;
+    margin-bottom:50px;
 }
 main .form-input button{
     padding-left:50px;

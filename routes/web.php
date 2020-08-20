@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,10 @@ Route::get('/laravel', function () {
     return view('welcome');
 });
 //-------------  Backend   ------------
-Route::group(['middleware'=>'auth','prefix' => 'admin/'], function () {
+Route::group(['middleware'=>'auth', 'prefix' => 'admin/', 'as' => 'admin.'], function () {
     Route::get('dashboard','AdminPageController@getDashBoard');
     Route::get('add-categories','AdminPageController@getAddCategories');
-    Route::post('add-categories','AdminPageController@postAddCategories');
+    Route::post('add-categories','AdminPageController@postAddCategories')->name('add.category');
     Route::get('list-categories','AdminPageController@getListCategories')->name('list.categories');
     Route::get('add-info-post','AdminPageController@getAddInfoPost');
     Route::post('add-info-post','AdminPageController@postAddInfoPost');
@@ -35,16 +36,18 @@ Route::group(['middleware'=>'auth','prefix' => 'admin/'], function () {
         Route::get('info-post/{id}','AdminPageController@getEditInfoPost');
         Route::post('info-post/{id}','AdminPageController@postEditCateg');
     });
+    require __DIR__ . '/webs/backend/category.php';
+    require __DIR__ . '/webs/backend/product.php';
 });
 Route::get('send-mail', function () {
-   
+
     $details = [
         'title' => 'This is title',
         'body' => 'This is body'
     ];
-   
+
     \Mail::to('vithiluu1415@gmail.com')->send(new \App\Mail\MyTestMail($details));
-   
+
     dd("Email is Sent.");
 });
 
@@ -69,3 +72,14 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('product-detail', 'PageController@productDetail')->name('product.detail');
 Route::get('compare-products', 'PageController@compareProducts')->name('compare.products');
 // --------------auth-----------------
+
+Route::get('textediter', function () {
+    return view('testtextediter');
+});
+
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
