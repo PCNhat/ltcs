@@ -9,8 +9,8 @@
     @include('errors/errors')
     @include('success/success')
     {{-- ---------------------------------------- --}}
-    
-    <form class="form-group" action="" method="post">
+
+    <form class="form-group" action="{{ route('add.category') }}" method="post">
         @csrf
         <div>
             <label for="">Tên danh mục</label>
@@ -18,7 +18,7 @@
         </div>
         <div>
             <label for="">Mô tả danh mục</label>
-            <input class="form-control" type="text" name="cate_des">
+            <textarea class="form-control" type="text" name="cate_des"></textarea>
         </div>
         <div>
             <label for="">Chế độ hiển thị</label>
@@ -28,4 +28,7 @@
         <button class="btn btn-danger" type="reset">Xóa</button>
     </form>
 </section>
+<script>
+    var route_prefix = "/filemanager";
+</script>
 @stop

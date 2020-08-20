@@ -7,6 +7,9 @@
     <link rel="stylesheet" href={{url('assets/bootstrap/css/bootstrap.min.css')}}>
     {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> --}}
     <link rel="stylesheet" href={{url('assets/backend/css/style.css')}}>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('vendor/laravel-filemanager/img/72px color.png') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <title>@yield('title')</title>
 </head>
 
@@ -30,8 +33,8 @@
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
                         {{-- {{$name}} --}}
                         abc
-                        
-                    </a>    
+
+                    </a>
                     <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
                         {{-- {{ csrf_field() }} --}}
                         @csrf
@@ -46,18 +49,19 @@
         <div class="side-bar">
             <ul>
                 <li><a href="">Dashboard<sup>New</sup></a></li>
-                <li class="nav-title">DANH MỤC</li>
-                <li><a href={{url('admin/add-categories')}}>Thêm danh mục</a></li>
-                <li><a href={{url('admin/list-categories')}}>Danh sách</a></li>
-                <li class="nav-title">TIÊU ĐỀ BÀI VIẾT</li>
-                <li><a href={{url('admin/add-info-post')}}>Thêm tiêu đề</a></li>
-                <li><a href={{url('admin/list-info-post')}}>Danh sách</a></li>
+                <li class="nav-title text-uppercase">DANH MỤC</li>
+                <li><a href="{{ route('admin.category.create') }}">Thêm danh mục</a></li>
+                <li><a href={{ route('admin.category.index') }}>Danh sách</a></li>
+                <li class="nav-title text-uppercase">SẢN PHẨM</li>
+                <li><a href="{{ route('admin.product.create') }}">Thêm sản phẩm</a></li>
+                <li><a href="{{ route('admin.product.index') }}">Danh sách</a></li>
                 <li class="nav-title">THEME</li>
                 <li><a href="">Colors</a></li>
                 <li><a href="">Typography</a></li>
             </ul>
         </div>
         <main>
+            @include('success.success')
             @yield('main')
         </main>
     </div>
@@ -65,6 +69,14 @@
     <footer class="text-center">
         <a href="">CoreUI</a> © 2018 creativeLabs.
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.11/ckeditor.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.11/adapters/jquery.js"></script>
+    @yield('js')
 </body>
 
 </html>

@@ -18,6 +18,7 @@ class AdminPageController extends Controller
         return view('backend.add.add_categories');
     }
     public function postAddCategories(Request $request){
+        // dd($request->cate_des);
         $rules = [
             'cate_name'=>'required',
             'cate_des'=>'required',

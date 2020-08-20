@@ -29,7 +29,7 @@
                 <tr>
                     <td><center>{{$stt}}</center></td>
                     <td>{{$cate->cate_name}}</td>
-                    <td>{{$cate->cate_des}}</td>
+                    <td>{!! $cate->cate_des !!}</td>
                     <td><center>{{$cate->mode}}</center></td>
                     <td><a href={{url('admin/edit/categories/'.$cate->id)}} class="btn btn-primary"><b>Sửa</b></a></td>
                     <td><a href={{url('admin/delete/categories/'.$cate->id)}} class="btn btn-danger"><b>Xóa</b></a></td>
