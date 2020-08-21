@@ -3,7 +3,7 @@
 @section('main')
     <section class="list">
         <div class="card">
-            <div class="card-header bg-white text-uppercase font-weight-bold">{{ $product->name }}</div>
+            <div class="card-header bg-white text-uppercase font-weight-bold">{{$product->category->name}}  -  {{ $product->name }}</div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-xl-6">

@@ -10,6 +10,14 @@ use Illuminate\Database\Query\Builder;
 interface ProductServiceInterface
 {
     /**
+     * Find product detail by id
+     *
+     * @param int $id
+     * @return Model
+     */
+    public function findProductDetailById(int $id): Model;
+
+    /**
      * Update Product
      *
      * @param int $id
@@ -107,4 +115,12 @@ interface ProductServiceInterface
      * @return Builder[]|Collection
      */
     public function findProductAndProductDetail(int $id);
+
+    /**
+     * Find product detail and product
+     *
+     * @param int $id
+     * @return Builder[]|Collection
+     */
+    public function findProductDetailAndProduct(int $id);
 }
