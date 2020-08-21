@@ -30,19 +30,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c730d25-6204-4388-a749-072844134606" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/Product/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Product/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ProductDetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ProductDetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/categories/block/child_category_select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/categories/block/child_category_select.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/products/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/products/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/products/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/products/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/products/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Products/Repositories/ProductDetailRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Products/Repositories/ProductDetailRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Products/Repositories/ProductDetailRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Products/Repositories/ProductDetailRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Products/Services/ProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Products/Services/ProductService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Products/Services/ProductServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Products/Services/ProductServiceInterface.php" afterDir="false" />
-    </list>
+    <list default="true" id="9c730d25-6204-4388-a749-072844134606" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +213,7 @@
       <workItem from="1597889594724" duration="13708000" />
       <workItem from="1597912878245" duration="10085000" />
       <workItem from="1597935040691" duration="12625000" />
-      <workItem from="1597982766609" duration="7287000" />
+      <workItem from="1597982766609" duration="7595000" />
     </task>
     <servers />
   </component>
