@@ -122,11 +122,14 @@ class ProductController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return View
      */
-    public function edit($id)
+    public function edit($id): View
     {
-        //
+        $categories = $this->categoryService->getListCategories();
+        $productDetail = $this->productService->findProductDetailAndProduct($id);
+
+        return view('backend.products.update', compact('categories', 'productDetail'));
     }
 
     /**
@@ -134,11 +137,40 @@ class ProductController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return RedirectResponse
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id): RedirectResponse
     {
-        //
+        $product = $request->only('category_id', 'name');
+        if ($request->hasFile('avatar')) {
+            $product['avatar'] = $this->uploadFile($request->file('avatar'), 'products');
+        }
+
+        $productDetail = $request->only(
+            'cpu_brand', 'cpu_series', 'cpu_suffixes', 'cpu_cores', 'cpu_threads', 'cpu_cache', 'cpu_lithography', 'cpu_base_clock', 'cpu_boost_clock',
+            'ram_amount', 'ram_type', 'ram_speed', 'ram_socket_number', 'ram_socket_existence_number', 'ram_max_amount_support',
+            'display_size', 'display_aspect_ratio', 'display_resolution', 'display_panel_type', 'display_technology', 'display_is_touch_screen',
+            'hard_drive_type', 'hard_drive_amount', 'hard_drive_socket_number', 'hard_drive_socket_existence_number', 'hard_drive_is_support_ssd', 'hard_drive_is_support_hdd',
+            'price',
+            'not_onboard_graphics_card', 'graphics_card',
+            'ports',
+            'wifi', 'bluetooth',
+            'camera', 'microphone', 'speaker',
+            'os',
+            'dimension', 'weight',
+            'battery');
+        $productDetailStored = $this->productService->findProductDetailById($id);
+
+        if ($productDetailStored !== null) {
+            $productDetail = $this->productService->updateProductDetail($id, $productDetail);
+            $productDescription['product_detail_id'] = $productDetailStored->id;
+            $product = $this->productService->updateProduct($productDetailStored->product_id, $product);
+            $productDescription = $this->productService->addProductDescription($productDescription);
+
+            return redirect()->route('admin.product.show', ['id' => $productDetailStored->product_id])->with(['success' => 'Sửa sản phẩm thành công!']);
+        }
+
+        return redirect()->back()->withErrors('Sửa sản phẩm thất bại!');
     }
 
     /**

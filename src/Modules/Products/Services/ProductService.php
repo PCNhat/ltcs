@@ -40,6 +40,18 @@ class ProductService implements ProductServiceInterface
     }
 
     /**
+     * Find product detail by id
+     *
+     * @param int $id
+     * @return Model
+     */
+    public function findProductDetailById(int $id): Model
+    {
+        return $this->productDetailRepository->getById($id);
+    }
+
+
+    /**
      * Update Product
      *
      * @param int $id
@@ -178,6 +190,17 @@ class ProductService implements ProductServiceInterface
     public function findProductAndProductDetail(int $id)
     {
         return $this->productRepository->findWithProductDetail($id);
+    }
+
+    /**
+     * Find product detail and product
+     *
+     * @param int $id
+     * @return Builder[]|Collection
+     */
+    public function findProductDetailAndProduct(int $id)
+    {
+        return $this->productDetailRepository->findWithProduct($id);
     }
 
 }

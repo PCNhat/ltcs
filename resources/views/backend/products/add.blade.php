@@ -210,7 +210,6 @@
     <script>
         var route_prefix = "/filemanager";
         var csrf_token = '{{ csrf_token() }}';
-        {{--var route_prefix = "{{ asset('laravel-filemanager') }}"--}}
     </script>
 @stop
 @section('js')

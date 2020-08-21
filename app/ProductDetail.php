@@ -79,4 +79,9 @@ class ProductDetail extends Model
     {
         return $this->hasOne(ProductDescription::class, 'product_detail_id', 'id');
     }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class, 'product_id', 'id');
+    }
 }
