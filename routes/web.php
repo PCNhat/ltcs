@@ -19,25 +19,11 @@ Route::get('/laravel', function () {
 });
 //-------------  Backend   ------------
 Route::group(['middleware'=>'auth', 'prefix' => 'admin/', 'as' => 'admin.'], function () {
-    Route::get('dashboard','AdminPageController@getDashBoard');
-    Route::get('add-categories','AdminPageController@getAddCategories');
-    Route::post('add-categories','AdminPageController@postAddCategories')->name('add.category');
-    Route::get('list-categories','AdminPageController@getListCategories')->name('list.categories');
-    Route::get('add-info-post','AdminPageController@getAddInfoPost');
-    Route::post('add-info-post','AdminPageController@postAddInfoPost');
-    Route::get('list-info-post','AdminPageController@getListInfoPost')->name('list.infopost');
-    Route::group(['prefix'=>'delete'], function(){
-        Route::get('categories/{id}','AdminPageController@deleteCategories');
-        Route::get('info-post/{id}','AdminPageController@deleteInfoPost');
-    });
-    Route::group(['prefix'=>'edit'],function(){
-        Route::get('categories/{id}','AdminPageController@getEditCategories');
-        Route::post('categories/{id}','AdminPageController@postEditCategories');
-        Route::get('info-post/{id}','AdminPageController@getEditInfoPost');
-        Route::post('info-post/{id}','AdminPageController@postEditCateg');
-    });
+    require __DIR__ . '/webs/backend/user.php';
     require __DIR__ . '/webs/backend/category.php';
     require __DIR__ . '/webs/backend/product.php';
+    require __DIR__ . '/webs/backend/post.php';
+
 });
 Route::get('send-mail', function () {
 
@@ -55,7 +41,14 @@ Route::get('send-mail', function () {
 //-------------  Frontend   ------------
 
 
-Route::get('/','PageController@getIndex');
+Route::get('/', function () {
+    return view('frontend.index');
+});
+
+
+
+
+
 Route::get('course','PageController@getCourse');
 Route::get('good-post','PageController@getGood_post');
 Route::get('author','PageController@getAuthor');
@@ -69,8 +62,26 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('product', function () {
+   return view('frontend.products.products');
+});
 Route::get('product-detail', 'PageController@productDetail')->name('product.detail');
 Route::get('compare-products', 'PageController@compareProducts')->name('compare.products');
+
+Route::get('posts', function () {
+    return view('frontend.posts.posts');
+});
+Route::get('post-detail', function () {
+    $post = \App\Post::find(3);
+    return view('frontend.posts.post_detail', compact('post'));
+});
+
+Route::get('list-post', function () {
+    return view('backend.posts.index');
+});
+
+
+
 // --------------auth-----------------
 
 Route::get('textediter', function () {
@@ -82,4 +93,27 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']
 });
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();
+});
+
+Route::get('parentCategory', function () {
+   $category = \App\Category::with('parentCategory')->find(18); // danh mục con
+
+    function getParentCategoryName($data, $parentCategory) //hàm đệ quy
+    {
+        if ($parentCategory->category !== null) {
+            $data[] = $parentCategory->category->name;
+
+            getParentCategoryName($data, $parentCategory->category);
+        }
+        return $data;
+    }
+
+   $data[] = $category->name;
+
+   if($category->parentCategory !== null){
+       $data[] = $category->parentCategory->name;
+       $listCategory = getParentCategoryName($data, $category->parentCategory);
+   }
+
+   dd($listCategory);
 });

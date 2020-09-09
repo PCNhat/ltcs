@@ -16,23 +16,23 @@
 <body>
     <header>
         <div class="border-bottom header-cover">
-            <a class="narbar-brand" href="">
-                <img class="logo" src={{url('images/brand/logo.svg')}} alt="">
+            <a class="narbar-brand font-weight-bold" href="" style="font-size: 24px; color: #20a8d8;display: inline-block;border-right: 3px solid #20a8d8;padding-right: 46px;">
+                TECHNEWS
             </a>
-            <a class="bars" href="">
-                <i class="fas fa-bars"></i>
-            </a>
+{{--            <a class="bars" href="">--}}
+{{--                <i class="fas fa-bars"></i>--}}
+{{--            </a>--}}
             <ul>
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Users</a></li>
-                <li><a href="">Settings</a></li>
+{{--                <li><a href="">Dashboard</a></li>--}}
+{{--                <li><a href="">Users</a></li>--}}
+{{--                <li><a href="">Settings</a></li>--}}
             </ul>
             <div class="float-right">
                 <a href="">
                     <img class="rounded-circle" width="30%" src={{url('images/avatars/1.jpg')}} alt="">
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
                         {{-- {{$name}} --}}
-                        abc
+                        Admin
 
                     </a>
                     <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -49,15 +49,20 @@
         <div class="side-bar">
             <ul>
                 <li><a href="">Dashboard<sup>New</sup></a></li>
+                <li class="nav-title text-uppercase">Thành viên</li>
+                <li><a href="{{ route('admin.user.create') }}">Thêm quản trị viên</a></li>
+                <li><a href={{ route('admin.user.index') }}>Danh sách</a></li>
                 <li class="nav-title text-uppercase">DANH MỤC</li>
                 <li><a href="{{ route('admin.category.create') }}">Thêm danh mục</a></li>
                 <li><a href={{ route('admin.category.index') }}>Danh sách</a></li>
                 <li class="nav-title text-uppercase">SẢN PHẨM</li>
                 <li><a href="{{ route('admin.product.create') }}">Thêm sản phẩm</a></li>
                 <li><a href="{{ route('admin.product.index') }}">Danh sách</a></li>
-                <li class="nav-title">THEME</li>
-                <li><a href="">Colors</a></li>
-                <li><a href="">Typography</a></li>
+                <li class="nav-title text-uppercase">BÀI VIẾT</li>
+                <li><a href="{{ route('admin.post.create') }}">Viết bài</a></li>
+                <li><a href="{{ route('admin.post.index') }}">Danh sách bài viết</a></li>
+                <li class="nav-title">LIÊN HỆ & ĐÓNG GÓP</li>
+                <li><a href="">Quản lý liên hệ</a></li>
             </ul>
         </div>
         <main>
@@ -66,8 +71,8 @@
         </main>
     </div>
 
-    <footer class="text-center">
-        <a href="">CoreUI</a> © 2018 creativeLabs.
+    <footer>
+        Design by Phạm Công Nhật
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>

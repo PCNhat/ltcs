@@ -18,6 +18,7 @@ class Post extends Model
         'category_id',
         'title',
         'description',
+        'avatar',
         'content',
     ];
 
@@ -30,4 +31,15 @@ class Post extends Model
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id', 'id');
+    }
+
 }

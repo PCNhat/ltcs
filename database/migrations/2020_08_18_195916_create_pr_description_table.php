@@ -16,7 +16,7 @@ class CreatePrDescriptionTable extends Migration
         Schema::create('pr_description', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('product_detail_id')->nullable();
-            $table->foreign('product_detail_id')->references('id')->on('product_detail')->onDelete('cascade');;
+            $table->foreign('product_detail_id')->references('id')->on('product_detail')->onDelete('cascade');
             $table->text('description')->nullable();
             $table->timestamps();
         });

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Modules\Categories\Requests;
+
 use Illuminate\Foundation\Http\FormRequest;
 
 class AddCategoryRequest extends FormRequest
