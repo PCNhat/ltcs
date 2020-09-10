@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 interface PostServiceInterface
 {
     /**
+     * Get list posts
+     * @return mixed
+     */
+    public function listPost();
+
+    /**
      * Store post
      *
      * @param array $data
@@ -21,4 +27,18 @@ interface PostServiceInterface
      * @return bool
      */
     public function updatePost(array $data, int $id): bool;
+
+    /**
+     * show post by id
+     * @param int $id
+     * @return mixed
+     */
+    public function showPost(int $id);
+
+    /**
+     * Delete post
+     * @param int $id
+     * @return bool
+     */
+    public function deletePost(int $id): bool;
 }

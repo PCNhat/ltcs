@@ -203,77 +203,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade border-top-0 border p-3" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    <div class="font-size-lg pb-3"><strong>Goby</strong></div>
-                                    <div class="row pb-2">
-                                        <div class="col-md-6 col-lg-6 col-sm-6">
-                                            <div class="py-2 text-muted"><strong>Contact name</strong>
-                                            </div>
-                                            <div class="font-size-lg"><strong>Hoang</strong></div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-6 col-sm-6">
-                                            <div class="py-2 text-muted"><strong>Company/ Organization</strong>
-                                            </div>
-                                            <div class="font-size-lg"><strong>Goby</strong></div>
-                                        </div>
-                                    </div>
-                                    <div class="row pb-2">
-                                        <div class="col-md-6 col-lg-6 col-sm-6">
-                                            <div class="py-2 text-muted"><strong>Email</strong>
-                                            </div>
-                                            <div class="font-size-lg"><strong>phungminhhoang174@gmail.com</strong></div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-6 col-sm-6">
-                                            <div class="py-2 text-muted"><strong>Phone number</strong>
-                                            </div>
-                                            <div class="font-size-lg"><strong>+84 97 748 19 01</strong></div>
-                                        </div>
-                                    </div>
-                                    <div class="row pb-2">
-                                        <div class="col-md-6 col-lg-6 col-sm-6">
-                                            <div class="py-2 text-muted">
-                                                <strong>Address Line 1</strong></div>
-                                            <div class="font-size-lg"><strong>26B Trần Quý Cáp</strong></div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-6 col-sm-6">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="py-2 text-muted">
-                                                        <strong>City</strong></div>
-                                                    <div class="font-size-lg"><strong>Ha Noi</strong></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="py-2 text-muted">
-                                                        <strong>State/Province</strong></div>
-                                                    <div class="font-size-lg"><strong></strong></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row pb-2">
-                                        <div class="col-md-6 col-lg-6 col-sm-6">
-                                            <div class="py-2 text-muted">
-                                                <strong>Address Line 2</strong></div>
-                                            <div class="font-size-lg"><strong></strong></div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-6 col-sm-6">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="py-2 text-muted">
-                                                        <strong>Zip/Postal code</strong></div>
-                                                    <div class="font-size-lg"><strong></strong></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="py-2 text-muted">
-                                                        <strong>Country</strong></div>
-                                                    <div class="font-size-lg">
-                                                        <strong>Viet Nam</strong>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             @endforeach
                         </div>
                     </div>
@@ -322,7 +251,7 @@
 {{--                </table>--}}
             </div>
             <div class="card-footer text-right bg-white">
-                <a class="btn btn-success" href="{{ route('admin.product.create') }}">Thêm sản phẩm mới</a>
+                <a class="btn btn-success" href="{{ route('admin.product-detail.create', $product->id) }}">Thêm phiên bản mới</a>
             </div>
         </div>
     </section>

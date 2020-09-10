@@ -24,7 +24,11 @@
                                 <td>{{ $user->username }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td class="text-center">@foreach($user->roles as $role) {{ $role->name . ' ' }} @endforeach</td>
+                                @if(\App\Helpers\Helper::isHideRole(auth()->user(), $user))
                                 <td><a class="btn btn-primary" href="{{ route('admin.user.show', ['id' => $user->id]) }}">Chi tiết</a></td>
+                                @endif
+
+                                @if(\App\Helpers\Helper::isHideRole(auth()->user(), $user))
                                 <td>
                                     <form action="{{ route('admin.user.destroy', ['id' => $user->id]) }}" method="POST">
                                         @method('DELETE')
@@ -32,13 +36,14 @@
                                         <button class="btn btn-danger" onclick="return confirm('Bạn chắc chắn muốn xóa?')" type="submit">Xóa</button>
                                     </form>
                                 </td>
+                                @endif
                             </tr>
                         @endforeach
                     </tbody>
                 </table>
             </div>
             <div class="card-footer text-right bg-white">
-                <a class="btn btn-success" href="{{ route('admin.category.create') }}">Thêm danh mục mới</a>
+                <a class="btn btn-success" href="{{ route('admin.user.create') }}">Thêm thành viên mới</a>
             </div>
         </div>
     </section>

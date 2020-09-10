@@ -23,6 +23,16 @@ class PostService implements PostServiceInterface
     }
 
     /**
+     * Get list posts
+     *
+     * @return Model|mixed
+     */
+    public function listPost()
+    {
+        return $this->postRepository->all();
+    }
+
+    /**
      * Store post
      *
      * @param array $data
@@ -43,5 +53,25 @@ class PostService implements PostServiceInterface
     public function updatePost(array $data, int $id): bool
     {
         return $this->postRepository->update($data, $id);
+    }
+
+    /**
+     * show post by id
+     * @param int $id
+     * @return mixed
+     */
+    public function showPost(int $id)
+    {
+        return $this->postRepository->getById($id);
+    }
+
+    /**
+     * Delete post
+     * @param int $id
+     * @return bool
+     */
+    public function deletePost(int $id): bool
+    {
+        return $this->postRepository->delete($id);
     }
 }

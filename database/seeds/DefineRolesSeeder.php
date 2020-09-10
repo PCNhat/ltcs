@@ -31,6 +31,21 @@ class DefineRolesSeeder extends Seeder
         );
 
         Permission::query()->updateOrCreate(
+            ['name' => PermissionConstant::PERMISSION_CREATE_ADMIN],
+            ['guard_name' => 'web']
+        );
+
+        Permission::query()->updateOrCreate(
+            ['name' => PermissionConstant::PERMISSION_UPDATE_ADMIN],
+            ['guard_name' => 'web']
+        );
+
+        Permission::query()->updateOrCreate(
+            ['name' => PermissionConstant::PERMISSION_DELETE_ADMIN],
+            ['guard_name' => 'web']
+        );
+
+        Permission::query()->updateOrCreate(
             ['name' => PermissionConstant::PERMISSION_CREATE_MOD],
             ['guard_name' => 'web']
         );

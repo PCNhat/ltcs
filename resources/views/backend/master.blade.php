@@ -62,7 +62,7 @@
                 <li><a href="{{ route('admin.post.create') }}">Viết bài</a></li>
                 <li><a href="{{ route('admin.post.index') }}">Danh sách bài viết</a></li>
                 <li class="nav-title">LIÊN HỆ & ĐÓNG GÓP</li>
-                <li><a href="">Quản lý liên hệ</a></li>
+                <li><a href="{{ route('admin.contact.index') }}">Quản lý liên hệ</a></li>
             </ul>
         </div>
         <main>

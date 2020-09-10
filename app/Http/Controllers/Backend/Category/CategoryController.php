@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers\Backend\Category;
 
-use App\Category;
 use App\Http\Controllers\Controller;
 use App\Modules\Categories\Requests\AddCategoryRequest;
 use App\Modules\Categories\Requests\UpdateCategoryRequest;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 use App\Modules\Categories\Services\CategoryServiceInterface;
 

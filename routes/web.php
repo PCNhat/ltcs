@@ -23,8 +23,10 @@ Route::group(['middleware'=>'auth', 'prefix' => 'admin/', 'as' => 'admin.'], fun
     require __DIR__ . '/webs/backend/category.php';
     require __DIR__ . '/webs/backend/product.php';
     require __DIR__ . '/webs/backend/post.php';
+    require __DIR__ .'/webs/backend/contact.php';
 
 });
+
 Route::get('send-mail', function () {
 
     $details = [

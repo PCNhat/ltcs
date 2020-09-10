@@ -8,11 +8,6 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -34,34 +29,30 @@
       <change beforePath="$PROJECT_DIR$/.idea/ltcs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ltcs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/User/Usercontroller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/Category/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Category/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/Post/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Post/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/BootstrapServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BootstrapServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_035026_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_035026_create_posts_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/TableCategoriesSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/TableInfoPostSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/products/product-images/macbook-pro-16inch-space-gray-ONEWAYMACBOOK_.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/products/product-images/macbook-pro-16inch.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/add/add_categories.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/add/add_info_post.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/edit/edit_categories.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/edit/edit_info_post.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/list/list_categories.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/list/list_info_post.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_025328_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_025328_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_030405_create_product_detail_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_030405_create_product_detail_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DefineRolesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DefineRolesSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/block/title-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/block/title-page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/products/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/products/products.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/posts/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/posts/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/posts/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/posts/update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/products/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/webs/backend/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/webs/backend/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modules/Categories/Requests/AddCategoryRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Categories/Requests/AddCategoryRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/webs/backend/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/webs/backend/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Helpers/PermissionConstant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/PermissionConstant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Posts/Services/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Posts/Services/PostService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Posts/Services/PostServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Posts/Services/PostServiceInterface.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +180,9 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/unisharp/laravel-filemanager" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
     </include_path>
   </component>
   <component name="ProjectId" id="1g2VlubEBm9SJxXesdJjdlLMBoP" />
@@ -201,25 +195,33 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\ltcs\public\images" />
-      <recent name="C:\xampp\htdocs\ltcs\public\storage\images\products" />
-      <recent name="C:\xampp\htdocs\ltcs\storage\app\public" />
-      <recent name="C:\xampp\htdocs\ltcs\src\Modules\Categories\Requests" />
-      <recent name="C:\xampp\htdocs\ltcs\routes\web" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\ltcs\resources\views\frontend\posts" />
       <recent name="C:\xampp\htdocs\ltcs\database\migrations" />
       <recent name="C:\xampp\htdocs\ltcs\public\images" />
       <recent name="C:\xampp\htdocs\ltcs\src\Modules\Products\Repositories" />
       <recent name="C:\xampp\htdocs\ltcs\resources\views\backend\products" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ltcs\public\images" />
+      <recent name="C:\xampp\htdocs\ltcs\public\storage\images\products" />
+      <recent name="C:\xampp\htdocs\ltcs\storage\app\public" />
+      <recent name="C:\xampp\htdocs\ltcs\src\Modules\Categories\Requests" />
+      <recent name="C:\xampp\htdocs\ltcs\routes\web" />
     </key>
   </component>
   <component name="RunManager">
@@ -228,7 +230,10 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9c730d25-6204-4388-a749-072844134606" name="Default Changelist" comment="" />
@@ -263,11 +268,13 @@
       <workItem from="1599235656112" duration="5830000" />
       <workItem from="1599443040351" duration="16000" />
       <workItem from="1599679347396" duration="3375000" />
+      <workItem from="1599710822769" duration="3970000" />
+      <workItem from="1599715660258" duration="24501000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -290,14 +297,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="724" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598527638359" />
-    <state x="765" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597838811035">
+    <state x="765" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599749499447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="150" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597838811035" />
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599239224761">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="765" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599749499447" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599724105772">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599724105772" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599239224761" />
+    <state x="2720" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599732452615">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2720" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599732452615" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1599443053683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -310,9 +322,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597713969214" />
-    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599682503658">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2536" y="240" key="run.anything.popup" timestamp="1599731481106">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599713482547" />
+    <state x="2536" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599731481106" />
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1599730739730">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599730739730" />
     <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599682503658" />
   </component>
 </project>
