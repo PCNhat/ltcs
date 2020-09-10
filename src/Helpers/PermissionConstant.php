@@ -10,6 +10,10 @@ interface PermissionConstant
     public const ROLE_MEMBER = 'MEMBER';
 
 //    Permission
+    public const PERMISSION_CREATE_ADMIN = 'admin.create';
+    public const PERMISSION_UPDATE_ADMIN = 'admin.update';
+    public const PERMISSION_DELETE_ADMIN = 'admin.delete';
+
     public const PERMISSION_CREATE_MOD = 'mod.create';
     public const PERMISSION_UPDATE_MOD = 'mod.update';
     public const PERMISSION_DELETE_MOD = 'mod.delete';

@@ -6,6 +6,8 @@ use App\Helpers\Repositories\BaseRepository;
 use App\Helpers\Repositories\BaseRepositoryInterface;
 use App\Modules\Categories\Repositories\CategoryRepository;
 use App\Modules\Categories\Repositories\CategoryRepositoryInterface;
+use App\Modules\Contacts\Repositories\ContactRepository;
+use App\Modules\Contacts\Repositories\ContactRepositoryInterface;
 use App\Modules\Posts\Repositories\PostRepository;
 use App\Modules\Posts\Repositories\PostRepositoryInterface;
 use App\Modules\Products\Repositories\ProductDescriptionRepository;
@@ -34,5 +36,6 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(ProductDescriptionRepositoryInterface::class, ProductDescriptionRepository::class);
         $this->app->bind(PostRepositoryInterface::class, PostRepository::class);
         $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
+        $this->app->bind(ContactRepositoryInterface::class, ContactRepository::class);
     }
 }
