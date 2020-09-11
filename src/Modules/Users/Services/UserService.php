@@ -83,4 +83,12 @@ class UserService implements UserServiceInterface
         return $this->userRepository->delete($id);
     }
 
+    /**
+     * count user
+     * @return int
+     */
+    public function countUser(): int
+    {
+        return $this->userRepository->countUser();
+    }
 }

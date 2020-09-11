@@ -4,6 +4,7 @@ namespace App\Modules\Products\Repositories;
 
 use App\Helpers\Repositories\BaseRepository;
 use App\Product;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Query\Builder;
 
@@ -55,4 +56,21 @@ class ProductRepository extends BaseRepository implements ProductRepositoryInter
         return Product::with('productDetail')->findOrFail($id);
     }
 
+    /**
+     * count product
+     * @return int
+     */
+    public function countProduct(): int
+    {
+        return Product::query()->count();
+    }
+
+    /**
+     * count product around day
+     * @return int
+     */
+    public function countProductAroundDay(): int
+    {
+        return Product::query()->where('created_at', '>', Carbon::now()->subDay())->count();
+    }
 }

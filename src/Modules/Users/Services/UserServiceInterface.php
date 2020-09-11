@@ -45,4 +45,10 @@ interface UserServiceInterface
      * @return bool
      */
     public function destroyUser(int $id): bool;
+
+    /**
+     * count user
+     * @return int
+     */
+    public function countUser(): int;
 }

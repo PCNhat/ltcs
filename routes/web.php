@@ -19,6 +19,7 @@ Route::get('/laravel', function () {
 });
 //-------------  Backend   ------------
 Route::group(['middleware'=>'auth', 'prefix' => 'admin/', 'as' => 'admin.'], function () {
+    require __DIR__ . '/webs/backend/dashboard.php';
     require __DIR__ . '/webs/backend/user.php';
     require __DIR__ . '/webs/backend/category.php';
     require __DIR__ . '/webs/backend/product.php';

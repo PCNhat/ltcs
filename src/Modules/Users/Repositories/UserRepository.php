@@ -30,4 +30,12 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
             ->paginate(Constant::DEFAULT_PAGINATION);
     }
 
+    /**
+     * count user
+     * @return int
+     */
+    public function countUser(): int
+    {
+        return User::query()->count();
+    }
 }

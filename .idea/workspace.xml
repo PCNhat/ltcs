@@ -26,33 +26,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c730d25-6204-4388-a749-072844134606" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ltcs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ltcs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/Category/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Category/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/Post/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/Post/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/BootstrapServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/BootstrapServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RepositoryServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_025328_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_025328_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_18_030405_create_product_detail_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_18_030405_create_product_detail_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DefineRolesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DefineRolesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/posts/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/posts/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/posts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/posts/update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/posts/update.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/products/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/users/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/webs/backend/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/webs/backend/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helpers/PermissionConstant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helpers/PermissionConstant.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/webs/backend/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/webs/backend/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Posts/Repositories/PostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Posts/Repositories/PostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Posts/Repositories/PostRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Posts/Repositories/PostRepositoryInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modules/Posts/Services/PostService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Posts/Services/PostService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modules/Posts/Services/PostServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Posts/Services/PostServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Products/Repositories/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Products/Repositories/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Products/Repositories/ProductRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Products/Repositories/ProductRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Products/Services/ProductService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Products/Services/ProductService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Products/Services/ProductServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Products/Services/ProductServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Users/Repositories/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Users/Repositories/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Users/Repositories/UserRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Users/Repositories/UserRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Users/Services/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Users/Services/UserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modules/Users/Services/UserServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modules/Users/Services/UserServiceInterface.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,6 +259,7 @@
       <workItem from="1599679347396" duration="3375000" />
       <workItem from="1599710822769" duration="3970000" />
       <workItem from="1599715660258" duration="24501000" />
+      <workItem from="1599790289121" duration="2933000" />
     </task>
     <servers />
   </component>
@@ -301,9 +291,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599749499447" />
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599724105772">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599792673319">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1599792673319" />
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1599724105772" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599239224761" />
     <state x="2720" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599732452615">

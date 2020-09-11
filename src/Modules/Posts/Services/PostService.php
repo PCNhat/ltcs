@@ -74,4 +74,22 @@ class PostService implements PostServiceInterface
     {
         return $this->postRepository->delete($id);
     }
+
+    /**
+     * count post
+     * @return int
+     */
+    public function countPost(): int
+    {
+        return $this->postRepository->countPost();
+    }
+
+    /**
+     * count post around day
+     * @return int
+     */
+    public function countPostAroundDay(): int
+    {
+        return $this->postRepository->countPostAroundDay();
+    }
 }
