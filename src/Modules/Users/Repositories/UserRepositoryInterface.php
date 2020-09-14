@@ -12,4 +12,10 @@ interface UserRepositoryInterface extends BaseRepositoryInterface
      * @return mixed
      */
     public function getAllWithRoles();
+
+    /**
+     * count user
+     * @return int
+     */
+    public function countUser(): int;
 }

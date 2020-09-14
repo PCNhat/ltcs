@@ -41,4 +41,16 @@ interface PostServiceInterface
      * @return bool
      */
     public function deletePost(int $id): bool;
+
+    /**
+     * count post
+     * @return int
+     */
+    public function countPost(): int;
+
+    /**
+     * count post around day
+     * @return int
+     */
+    public function countPostAroundDay(): int;
 }

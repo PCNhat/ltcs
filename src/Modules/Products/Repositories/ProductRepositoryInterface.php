@@ -31,4 +31,16 @@ interface ProductRepositoryInterface extends BaseRepositoryInterface
      * @return Builder[]|Collection
      */
     public function findWithProductDetail(int $id);
+
+    /**
+     * count product
+     * @return int
+     */
+    public function countProduct():int;
+
+    /**
+     * count product around day
+     * @return int
+     */
+    public function countProductAroundDay(): int;
 }

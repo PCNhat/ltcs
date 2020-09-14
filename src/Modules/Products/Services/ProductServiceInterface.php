@@ -123,4 +123,15 @@ interface ProductServiceInterface
      * @return Builder[]|Collection
      */
     public function findProductDetailAndProduct(int $id);
+
+    /**
+     * count product
+     * @return int
+     */
+    public function countProduct(): int;
+    /**
+     * count product around day
+     * @return int
+     */
+    public function countProductAroundDay(): int;
 }

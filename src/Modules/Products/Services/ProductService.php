@@ -203,4 +203,21 @@ class ProductService implements ProductServiceInterface
         return $this->productDetailRepository->findWithProduct($id);
     }
 
+    /**
+     * count product
+     * @return int
+     */
+    public function countProduct(): int
+    {
+        return $this->productRepository->countProduct();
+    }
+
+    /**
+     * count product around day
+     * @return int
+     */
+    public function countProductAroundDay(): int
+    {
+        return $this->productRepository->countProductAroundDay();
+    }
 }
